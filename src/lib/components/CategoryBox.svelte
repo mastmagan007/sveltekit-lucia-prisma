@@ -14,7 +14,7 @@ export { theme as class };
             <h2 class="py-5 px-3 transition-all ease-in-out duration-200 group-hover:text-white  text-dark">{title}</h2>
         </a>
    
-    <style lang='scss'>
+    <style>
       
        .group:hover img{
         filter: brightness(0) invert(1);
