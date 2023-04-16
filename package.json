@@ -45,7 +45,7 @@
 		"@lucia-auth/sveltekit": "^0.6.2",
 		"@prisma/client": "^4.9.0",
 		"@supabase/supabase-js": "^2.20.0",
-		"@sveltejs/adapter-vercel": "^2.4.1",
+		"@sveltejs/adapter-vercel": "^1.1.1",
 		"daisyui": "^2.51.5",
 		"lucia-auth": "^0.6.0",
 		"svelte-youtube-embed": "^0.1.8"
