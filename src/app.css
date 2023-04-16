@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+	--dark:#101010;
+	--light:#fafafa;
+	--yellow:#DDF247;
+  --pink:#831843;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "KyivSans";
+    src: url(lib/fonts/KyivTypeSans.woff2) format('woff2');
+    font-weight: 100 1000;
+    font-display: swap;
+}
+body{
+  background: var(--dark);
+}
+.btnSec{
+  position: relative;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--dark);
+  border-radius:9999px;
+  background-color: var(--dark);
+  /* box-shadow: 5px 3px black; */
+transition: all 0.3s;
+z-index: 1;
+width: 150px;
+height: 40px;
+}
+.btnSec:after{
+  position: absolute;
+  content: attr(data-title);
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+text-align: center;
+margin-block: auto;
+ background-color: #ffffff;
+  top: -2px;
+  left: -2px;
+  border-radius: 9999px;
+  z-index: 0;
+  border: 1px solid var(--dark);
+  transition: all 0.3s;
+
+}
+.btnSec:hover:after{
+  transform: translate(2px, 2px);
+
+}
+
+.btnPrimary{
+  position: relative;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--dark);
+  border-radius:9999px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+.btnPrimary:hover{
+  box-shadow: 5px 3px black;
+
+}
+
+.app{
+	font-family: 'Montserrat','Kyiv Sans', sans-serif;
+	background: #000000;
+}
+h1,h2{
+    font-family:'KyivSans'; 
+    font-weight: 800;
+}
+
+p{
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 16px;
+  font-weight: 500px;
+}

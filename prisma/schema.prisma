@@ -6,17 +6,21 @@ generator client {
 }
 
 datasource db {
-    provider = "sqlite"
-    url      = "file:./dev.sqlite"
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  
 }
+
 
 model Article {
     id      Int    @id @default(autoincrement())
     title   String
     content String
+    imageUrl  String?
     User    User   @relation(fields: [userId], references: [id])
     userId  String
 }
+
 
 model User {
     id       String    @id @unique
