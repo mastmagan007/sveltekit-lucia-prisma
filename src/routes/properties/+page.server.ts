@@ -117,15 +117,20 @@
 
 
 // New
-
+import dotenv from 'dotenv';
+dotenv.config();
 import { createClient } from '@supabase/supabase-js';
 import { PrismaClient , Property } from '@prisma/client';
 import { corsHeaders } from '../../lib/cors'
-import responseData  from '../../lib/api.json'
-const supabaseUrl = 'https://glkotvdjsehkcmgfuacc.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdsa290dmRqc2Voa2NtZ2Z1YWNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzk2OTMyNzgsImV4cCI6MTk5NTI2OTI3OH0.bG2QPf80cTUwVGkQCfbYe0w8SrfgzzWS_izA1QAxoRE';
-const accessToken = '1155d6a3502a9afa0aadd8c7ab9f0a9af4d83f11';
+//import responseData  from '../../lib/api.json'
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const accessToken = process.env.ACCESS_TOKEN;
+
+// The rest of your code...
+
 const prisma = new PrismaClient();
+
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
@@ -189,8 +194,21 @@ async function getOrCreateProperty(property, mediaUrls) {
   }
 }
 
+
+
 export const load = async ({ fetch }) => {
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
   try {
+    const response = await fetch('https://api.mlsgrid.com/v2/Property?$filter=OriginatingSystemName%20eq%20%27mfrmls%27%20and%20ModificationTimestamp%20gt%202020-12-30T23:59:59.99Z&$expand=Media,Rooms,UnitTypes', {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        ...corsHeaders,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    const responseData = await response.json();
     if (responseData.hasOwnProperty('value')) {
       const { value } = responseData;
 
