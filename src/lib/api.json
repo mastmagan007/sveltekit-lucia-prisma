@@ -1,0 +1,862 @@
+{
+    "@odata.context": "https://api.mlsgrid.com/v2/$metadata#Property",
+    "value": [
+        {
+            "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR1329603')",
+            "AdditionalParcelsYN": false,
+            "MFR_AdditionalRooms": "Storage Rooms",
+            "Appliances": [
+                "Dishwasher",
+                "Disposal",
+                "Electric Water Heater",
+                "Microwave",
+                "Range",
+                "Refrigerator"
+            ],
+            "ArchitecturalStyle": [
+                "Elevated"
+            ],
+            "AssociationAmenities": [
+                "Dock",
+                "Elevator(s)",
+                "Gated",
+                "Laundry",
+                "Maintenance",
+                "Marina",
+                "Recreation Facilities",
+                "Security",
+                "Tennis Court(s)"
+            ],
+            "AssociationFee": 1182,
+            "AssociationFeeFrequency": "Quarterly",
+            "AssociationFeeIncludes": [
+                "Cable TV",
+                "Pool",
+                "Escrow Reserves Fund",
+                "Insurance",
+                "Maintenance Structure",
+                "Maintenance Grounds",
+                "Maintenance",
+                "Management",
+                "Pest Control",
+                "Recreational Facilities",
+                "Security",
+                "Sewer",
+                "Trash",
+                "Water"
+            ],
+            "AssociationName": "Harbor Towers Management",
+            "AssociationYN": true,
+            "MFR_AvailableForLeaseYN": "1",
+            "MFR_BackupsRequestedYN": "1",
+            "BathroomsFull": 2,
+            "BathroomsTotalInteger": 2,
+            "BedroomsTotal": 2,
+            "BuildingAreaSource": "Public Records",
+            "BuildingAreaTotal": 1152,
+            "BuildingAreaUnits": "Square Feet",
+            "MFR_BuildingElevatorYN": "1",
+            "BuyerAgencyCompensation": "3%",
+            "MFR_CalculatedListPriceByCalculatedSqFt": "355.11",
+            "CarportSpaces": 1,
+            "CarportYN": true,
+            "MFR_CDDYN": "0",
+            "City": "SARASOTA",
+            "CloseDate": "2015-04-08",
+            "ClosePrice": 360000,
+            "MFR_ClosePriceByCalculatedListPriceRatio": "0.96",
+            "MFR_ClosePriceByCalculatedSqFt": "340.91",
+            "CoListAgentDirectPhone": "941-302-4676",
+            "CoListAgentFullName": "Nikki Boguszewski",
+            "CommunityFeatures": [
+                "Deed Restrictions",
+                "Gated",
+                "No Truck/RV/Motorcycle Parking",
+                "Pool",
+                "Tennis Courts",
+                "Water Access"
+            ],
+            "MFR_ContractStatus": "Appraisal,Financing,Inspections",
+            "Cooling": [
+                "Central Air"
+            ],
+            "CountyOrParish": "Sarasota",
+            "CumulativeDaysOnMarket": 2203,
+            "MFR_CurrentPrice": "360000.00",
+            "DaysOnMarket": 2203,
+            "MFR_DaysToClosed": "2274",
+            "DirectionFaces": "West",
+            "MFR_DPRURL": "http://www.workforce-resource.com/eligibility/listing?metro_area=MFRMLS&listing_id=A3901152&show_results=true&skip_sso=true",
+            "MFR_DPRURL2": "http://www.workforce-resource.com/eligibility/listing?metro_area=MFRMLS&listing_id=A3901152&cview=true&show_results=true&customer_portal=true",
+            "MFR_DPRYN": "1",
+            "ElementarySchool": "Phillippi Shores Elementary",
+            "MFR_ExpectedClosingDate": "2015-04-08T00:00:00.000",
+            "FireplaceYN": false,
+            "MFR_FloorNumber": "7",
+            "Furnished": "Furnished",
+            "MFR_FutureLandUse": "0405",
+            "HighSchool": "Sarasota High",
+            "MFR_HomesteadYN": "0",
+            "HomeWarrantyYN": false,
+            "InteriorFeatures": [
+                "Ceiling Fans(s)",
+                "Crown Molding",
+                "Elevator",
+                "Living Room/Dining Room Combo",
+                "Solid Wood Cabinets",
+                "Split Bedroom",
+                "Stone Counters",
+                "Walk-In Closet(s)",
+                "Window Treatments"
+            ],
+            "InternetAddressDisplayYN": true,
+            "InternetAutomatedValuationDisplayYN": true,
+            "InternetEntireListingDisplayYN": true,
+            "ListAgentAOR": "Sarasota - Manatee",
+            "ListAgentDirectPhone": "941-302-0732",
+            "ListAgentEmail": "joeboguszewski@prodigy.net",
+            "ListAgentFax": "941-388-3231",
+            "ListAgentFullName": "JOE BOGUSZEWSKI",
+            "ListAgentKey": "MFR1122934",
+            "ListAgentMlsId": "MFR281500660",
+            "ListAgentOfficePhoneExt": "2815",
+            "ListAgentPager": "941-302-0732",
+            "ListAgentURL": "http://",
+            "ListAOR": "Sarasota - Manatee",
+            "ListingAgreement": "Exclusive Right To Sell",
+            "ListingContractDate": "2009-01-15",
+            "ListingId": "MFRA3901152",
+            "ListingKey": "MFR1329603",
+            "OriginatingSystemKey": "1329603",
+            "ListOfficeFax": "941-388-3231",
+            "MFR_ListOfficeHeadOfficeKeyNumeric": "1046575",
+            "ListOfficeKey": "MFR1046575",
+            "ListOfficeMlsId": "MFR281502055",
+            "ListOfficeName": "COLDWELL BANKER RES R E",
+            "ListOfficePhone": "941-388-3966",
+            "ListPrice": 375000,
+            "LivingArea": 1056,
+            "LivingAreaSource": "Public Records",
+            "LivingAreaUnits": "Square Feet",
+            "LotFeatures": [
+                "City Limits"
+            ],
+            "LotSizeAcres": 8.7,
+            "LotSizeSquareFeet": 378884,
+            "MFR_MaxPetWeight": "20",
+            "MiddleOrJuniorSchool": "Brookside Middle",
+            "MFR_MillageRate": "13.19",
+            "MFR_MinimumLease": "2 Weeks",
+            "MLSAreaMajor": "34242 - Sarasota/Crescent Beach/Siesta Key",
+            "MlsStatus": "Sold",
+            "MFR_MonthlyHOAAmount": "394.00",
+            "NewConstructionYN": false,
+            "MFR_NonRepCompensation": "3%",
+            "MFR_NumberOfPets": "2",
+            "MFR_NumTimesperYear": "26",
+            "OffMarketDate": "2015-01-28",
+            "OriginalEntryTimestamp": "2009-01-15T21:24:51.000Z",
+            "OriginalListPrice": 469500,
+            "MFR_OriginatingSystemName_": "Stellar MLS",
+            "MFR_OriginatingSystemTimestamp": "2014-03-24T17:10:23.507",
+            "MFR_OtherExemptionsYN": "0",
+            "Ownership": "Fee Simple",
+            "ParcelNumber": "0105134190",
+            "ParkingFeatures": [
+                "Assigned",
+                "Covered",
+                "Guest",
+                "Secured"
+            ],
+            "MFR_PetRestrictions": "2 Pets",
+            "PetsAllowed": [
+                "Yes"
+            ],
+            "MFR_PetSize": "Very Small (Under 15 Lbs.)",
+            "PhotosChangeTimestamp": "2021-04-30T01:23:55.279Z",
+            "PhotosCount": 8,
+            "PoolPrivateYN": false,
+            "PostalCode": "34242",
+            "PostalCodePlus4": "4105",
+            "PreviousListPrice": 395000,
+            "MFR_PreviousStatus": "Pending",
+            "PriceChangeTimestamp": "2014-08-08T18:14:16.000Z",
+            "MFR_PropertyDescription": "High Rise",
+            "PropertySubType": "Condominium",
+            "PropertyType": "Residential",
+            "PublicRemarks": "The PENTHOUSE of your dreams with a SIDE VIEW OF THE OPEN BAY, beautifully updated with maple cabinets and elegant furniture.  Sit on your enclosed lanai and enjoy the view of downtown Sarasota  as well as the marina. Both lavishly decorated bedrooms have a view of the water.  Fully furnished and ready to enjoy.  This unit comes with a covered carport and new air conditioner.",
+            "PublicSurveyRange": "18",
+            "PublicSurveySection": "18",
+            "PurchaseContractDate": "2015-01-28",
+            "MFR_RATIO_ClosePrice_By_ListPrice": "0.96000",
+            "MFR_RATIO_ClosePrice_By_OriginalListPrice": "0.76677",
+            "MFR_RATIO_CurrentPrice_By_CalculatedSqFt": "340.91",
+            "RoadFrontageType": [
+                "Highway"
+            ],
+            "MFR_RoomCount": "7",
+            "SecurityFeatures": [
+                "Gated Community",
+                "Secured Garage / Parking",
+                "Smoke Detector(s)"
+            ],
+            "ShowingRequirements": [
+                "Contact Call Center"
+            ],
+            "SpaYN": true,
+            "SpecialListingConditions": [
+                "None"
+            ],
+            "StandardStatus": "Closed",
+            "StateOrProvince": "FL",
+            "StatusChangeTimestamp": "2015-04-08T18:23:44.000Z",
+            "StoriesTotal": 7,
+            "SubdivisionName": "HARBOR TOWERS Y AND R",
+            "TaxAnnualAmount": 3731,
+            "TaxBookNumber": "0009/0016",
+            "TaxLegalDescription": "UNIT PH09 HARBOR TOWERS YACHT & RACQUET CLUB",
+            "TaxLot": "PH09",
+            "TaxYear": 2013,
+            "MFR_TotalAcreage": "Non-Applicable",
+            "Township": "37",
+            "TransactionBrokerCompensation": "3%",
+            "Utilities": [
+                "Cable Connected",
+                "Electricity Connected"
+            ],
+            "View": [
+                "Water"
+            ],
+            "MFR_WaterAccess": "Bay/Harbor,Intracoastal Waterway,Marina",
+            "MFR_WaterAccessYN": "1",
+            "MFR_WaterExtras": "Dock - Slip Deeded On-Site,Fishing Pier,Sailboat Water,Seawall - Concrete",
+            "MFR_WaterExtrasYN": "1",
+            "WaterfrontFeatures": [
+                "Bay/Harbor",
+                "Intracoastal Waterway",
+                "Marina"
+            ],
+            "WaterfrontYN": true,
+            "WaterSource": [
+                "Public"
+            ],
+            "MFR_WaterView": "Bay/Harbor - Partial,Intracoastal Waterway,Marina",
+            "MFR_WaterViewYN": "1",
+            "WindowFeatures": [
+                "Blinds",
+                "Window Treatments"
+            ],
+            "YearBuilt": 1976,
+            "MFR_ZoningCompatibleYN": "0",
+            "MFR_PublicRemarksAgent": "The PENTHOUSE of your dreams with a SIDE VIEW OF THE OPEN BAY, beautifully updated with maple cabinets and elegant furniture.  Sit on your enclosed lanai and enjoy the view of downtown Sarasota  as well as the marina. Both lavishly decorated bedrooms have a view of the water.  Fully furnished and ready to enjoy.  This unit comes with a covered carport and new air conditioner.",
+            "MFR_SDEOYN": "0",
+            "MFR_TotalAnnualFees": "4728.00",
+            "MFR_TotalMonthlyFees": "394.00",
+            "OriginatingSystemName": "mfrmls",
+            "ModificationTimestamp": "2021-04-30T01:23:55.279Z",
+            "Media": [
+                {
+                    "Order": 3,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/ee0e3c14-b555-4620-a284-16236520635a.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5762"
+                },
+                {
+                    "Order": 2,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/d543d097-0e75-4ec9-8b02-930c7c84c49c.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5761"
+                },
+                {
+                    "Order": 1,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/02511047-efcb-4cec-8e04-63c9bbf9fd28.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5760"
+                },
+                {
+                    "Order": 0,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/efea2e85-fc13-494a-8942-03b5c4fc5093.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f575f"
+                },
+                {
+                    "Order": 5,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/31028bf7-da6c-42b6-bee8-589993506c2d.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5764"
+                },
+                {
+                    "Order": 4,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/db0924a5-235f-46d8-acfe-82ba35ec56ed.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5763"
+                },
+                {
+                    "Order": 7,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/a95fa7fe-75d2-4b1a-815d-aa0316270dcc.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5766"
+                },
+                {
+                    "Order": 6,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/5979bfa4-c64d-46b7-b321-9a93bfba2c27.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:05.000Z",
+                    "MediaKey": "5bed6b04f9e2b616277f5765"
+                }
+            ],
+            "Rooms": [
+                {
+                    "RoomDimensions": "11x13",
+                    "RoomKey": "MFR82157732",
+                    "RoomLength": 13,
+                    "RoomType": "Bedroom 2",
+                    "RoomWidth": 11
+                },
+                {
+                    "RoomDimensions": "08x13",
+                    "RoomKey": "MFR98588135",
+                    "RoomLength": 13,
+                    "RoomType": "Dining Room",
+                    "RoomWidth": 8
+                },
+                {
+                    "RoomDimensions": "08x10",
+                    "RoomKey": "MFR106116683",
+                    "RoomLength": 10,
+                    "RoomType": "Kitchen",
+                    "RoomWidth": 8
+                },
+                {
+                    "RoomDimensions": "13x14",
+                    "RoomKey": "MFR110208074",
+                    "RoomLength": 14,
+                    "RoomType": "Living Room",
+                    "RoomWidth": 13
+                },
+                {
+                    "RoomDimensions": "11x17",
+                    "RoomKey": "MFR110746675",
+                    "RoomLength": 17,
+                    "RoomType": "Master Bedroom",
+                    "RoomWidth": 11
+                },
+                {
+                    "RoomDimensions": "08x13",
+                    "RoomKey": "MFR143774426",
+                    "RoomLength": 13,
+                    "RoomType": "Balcony/Porch/Lanai",
+                    "RoomWidth": 8
+                },
+                {
+                    "RoomFeatures": [
+                        "Tub With Shower"
+                    ],
+                    "RoomKey": "MFR500108562",
+                    "RoomType": "Master Bathroom"
+                }
+            ],
+            "BuyerAgentAOR": "Sarasota - Manatee",
+            "BuyerAgentFullName": "Ronald Stahl",
+            "BuyerAgentKey": "MFR1123067",
+            "BuyerAgentMlsId": "MFR281500913",
+            "BuyerOfficeKey": "MFR1046639",
+            "BuyerOfficeMlsId": "MFR281502183",
+            "BuyerOfficeName": "RON STAHL REALTY",
+            "Directions": "Siesta Key, just South of light at Midnight Pass Road and Beach Road",
+            "Latitude": 27.265022,
+            "Longitude": -82.541948,
+            "MFR_AssociationFeeRequirement": "Required",
+            "MFR_BuildingNameNumber": "Harbor Tower",
+            "MFR_SWSubdivCommunityName": "Not Applicable",
+            "MFR_SubdivisionNum": "7318",
+            "StreetName": "MIDNIGHT PASS",
+            "StreetNumber": "5855",
+            "StreetSuffix": "ROAD",
+            "UnitNumber": "PH09",
+            "UnparsedAddress": "5855  MIDNIGHT PASS RD  #PH09",
+            "MlgCanView": true,
+            "MlgCanUse": [
+                "IDX"
+            ]
+        },
+        {
+            "@odata.id": "https://api.mlsgrid.com/v2/Property('MFR1329604')",
+            "AdditionalParcelsYN": false,
+            "Appliances": [
+                "Dishwasher",
+                "Disposal",
+                "Dryer",
+                "Microwave",
+                "Oven",
+                "Refrigerator",
+                "Washer"
+            ],
+            "AssociationAmenities": [
+                "Gated",
+                "Maintenance"
+            ],
+            "AssociationFee": 1359.52,
+            "AssociationFeeFrequency": "Quarterly",
+            "AssociationFeeIncludes": [
+                "Cable TV",
+                "Maintenance Grounds",
+                "Sewer",
+                "Trash",
+                "Water"
+            ],
+            "AssociationName": "Condominium Associates",
+            "AssociationYN": true,
+            "MFR_AvailableForLeaseYN": "1",
+            "BathroomsFull": 2,
+            "BathroomsTotalInteger": 2,
+            "BedroomsTotal": 2,
+            "BuildingAreaSource": "Public Records",
+            "BuildingAreaTotal": 1215,
+            "BuildingAreaUnits": "Square Feet",
+            "BuyerAgencyCompensation": "3.00%",
+            "MFR_CalculatedListPriceByCalculatedSqFt": "296.30",
+            "CarportSpaces": 2,
+            "CarportYN": true,
+            "MFR_CDDYN": "0",
+            "City": "BRADENTON",
+            "CloseDate": "2014-02-14",
+            "ClosePrice": 336000,
+            "MFR_ClosePriceByCalculatedListPriceRatio": "0.93",
+            "MFR_ClosePriceByCalculatedSqFt": "276.54",
+            "CommunityFeatures": [
+                "Gated",
+                "Pool"
+            ],
+            "ConstructionMaterials": [
+                "Wood Frame"
+            ],
+            "MFR_ContractStatus": "Inspections",
+            "Cooling": [
+                "Central Air"
+            ],
+            "CountyOrParish": "Manatee",
+            "CumulativeDaysOnMarket": 1588,
+            "MFR_CurrentPrice": "336000.00",
+            "DaysOnMarket": 1428,
+            "MFR_DaysToClosed": "1459",
+            "DirectionFaces": "Northwest",
+            "Disclosures": [
+                "Condominium Disclosure Available",
+                "HOA/PUD/Condo Disclosure"
+            ],
+            "MFR_DPRURL": "http://www.workforce-resource.com/eligibility/listing?metro_area=MFRMLS&listing_id=A3921467&show_results=true&skip_sso=true",
+            "MFR_DPRURL2": "http://www.workforce-resource.com/eligibility/listing?metro_area=MFRMLS&listing_id=A3921467&cview=true&show_results=true&customer_portal=true",
+            "MFR_DPRYN": "1",
+            "MFR_ExpectedClosingDate": "2014-02-20T00:00:00.000",
+            "MFR_ExpectedLeaseDate": "2014-02-14T00:00:00.000",
+            "FireplaceYN": false,
+            "Flooring": [
+                "Carpet",
+                "Ceramic Tile"
+            ],
+            "MFR_FloorNumber": "2",
+            "FoundationDetails": [
+                "Slab"
+            ],
+            "Furnished": "Furnished",
+            "MFR_FutureLandUse": "0400",
+            "Heating": [
+                "Central"
+            ],
+            "HomeWarrantyYN": false,
+            "InteriorFeatures": [
+                "Ceiling Fans(s)",
+                "Open Floorplan",
+                "Walk-In Closet(s)",
+                "Window Treatments"
+            ],
+            "InternetAddressDisplayYN": true,
+            "InternetAutomatedValuationDisplayYN": false,
+            "InternetEntireListingDisplayYN": true,
+            "ListAgentAOR": "Sarasota - Manatee",
+            "ListAgentDirectPhone": "941-812-0791",
+            "ListAgentEmail": "adamcuffaro@michaelsaunders.com",
+            "ListAgentFax": "941-752-2541",
+            "ListAgentFullName": "ADAM CUFFARO",
+            "ListAgentKey": "MFR1124547",
+            "ListAgentMlsId": "MFR281504415",
+            "ListAgentOfficePhoneExt": "2665",
+            "ListAgentPager": "941-812-0791",
+            "ListAgentURL": "www.academyrealtygroup.com",
+            "ListAOR": "Sarasota - Manatee",
+            "ListingAgreement": "Exclusive Right To Sell",
+            "ListingContractDate": "2010-02-16",
+            "ListingId": "MFRA3921467",
+            "ListingKey": "MFR1329604",
+            "OriginatingSystemKey": "1329604",
+            "ListingTerms": [
+                "Cash",
+                "Conventional"
+            ],
+            "ListOfficeFax": "941-752-2541",
+            "MFR_ListOfficeHeadOfficeKeyNumeric": "1044336",
+            "ListOfficeKey": "MFR1047624",
+            "ListOfficeMlsId": "MFR281520248",
+            "ListOfficeName": "MICHAEL SAUNDERS & COMPANY",
+            "ListOfficePhone": "941-752-2683",
+            "ListPrice": 360000,
+            "LivingArea": 1215,
+            "LivingAreaSource": "Public Records",
+            "LivingAreaUnits": "Square Feet",
+            "LotFeatures": [
+                "Sidewalk",
+                "Zero Lot Line"
+            ],
+            "MFR_MaxPetWeight": "35",
+            "MFR_MillageRate": "16.25",
+            "MFR_MinimumLease": "3 Months",
+            "MLSAreaMajor": "34210 - Bradenton",
+            "MlsStatus": "Sold",
+            "NewConstructionYN": false,
+            "MFR_NonRepCompensation": "3.00%",
+            "MFR_NumberOfPets": "1",
+            "MFR_NumTimesperYear": "4",
+            "OffMarketDate": "2014-01-14",
+            "OriginalEntryTimestamp": "2010-02-17T18:11:02.000Z",
+            "OriginalListPrice": 410000,
+            "MFR_OriginatingSystemName_": "Stellar MLS",
+            "MFR_OriginatingSystemTimestamp": "2014-02-21T14:24:14.560",
+            "MFR_OtherExemptionsYN": "0",
+            "Ownership": "Condominium",
+            "ParcelNumber": "6145434809",
+            "ParkingFeatures": [
+                "Open"
+            ],
+            "MFR_PetRestrictions": "Check with listing agent.",
+            "PetsAllowed": [
+                "Yes"
+            ],
+            "MFR_PetSize": "Small (16-35 Lbs.)",
+            "PhotosChangeTimestamp": "2021-04-30T01:23:55.309Z",
+            "PhotosCount": 13,
+            "PoolPrivateYN": false,
+            "PostalCode": "34210",
+            "PostalCodePlus4": "3559",
+            "PreviousListPrice": 410000,
+            "MFR_PreviousStatus": "Pending",
+            "PriceChangeTimestamp": "2010-05-13T04:00:00.000Z",
+            "PrivateRemarks": "Please call our Call Center @ 941-308-7777 for all showings. The attached Addendums are for the FR/BAR Contract. Please be sure to use the appropriate addendums for your offer contract. Thank you for your help.",
+            "PropertySubType": "Condominium",
+            "PropertyType": "Residential",
+            "PublicRemarks": "A second floor furnished 2/2 Villa with vaulted ceilings, walk in closets in Master bedroom, open plan with washer/dryer and kitchen appliances included.  Building located inside the gated community of IMG Academy, clubhouse and community pool available for resident use.  Residents have availability based use of tennis courts, golf training complex and fitness room.",
+            "PublicSurveyRange": "17",
+            "PublicSurveySection": "16",
+            "PurchaseContractDate": "2014-01-14",
+            "MFR_RATIO_ClosePrice_By_ListPrice": "0.93333",
+            "MFR_RATIO_ClosePrice_By_OriginalListPrice": "0.81951",
+            "MFR_RATIO_CurrentPrice_By_CalculatedSqFt": "276.54",
+            "MFR_RealtorInfo": "No Sign",
+            "Roof": [
+                "Metal"
+            ],
+            "MFR_RoomCount": "5",
+            "SecurityFeatures": [
+                "Gated Community",
+                "Smoke Detector(s)"
+            ],
+            "ShowingRequirements": [
+                "Contact Call Center"
+            ],
+            "SpecialListingConditions": [
+                "None"
+            ],
+            "StandardStatus": "Closed",
+            "StateOrProvince": "FL",
+            "StatusChangeTimestamp": "2014-02-21T19:24:14.000Z",
+            "SubdivisionName": "BOLLETTIERI RESORT VILLAS IV CONDO",
+            "TaxAnnualAmount": 3265,
+            "TaxBlock": "O",
+            "TaxBookNumber": "0029/0071",
+            "TaxLegalDescription": "UNIT 202 BLDG O BOLLETTIERI RESORT VILLAS IV, A CONDO PI#61454.3480/9",
+            "TaxLot": "202",
+            "TaxYear": 2011,
+            "MFR_TotalAcreage": "Up to 10,889 Sq. Ft.",
+            "Township": "35",
+            "TransactionBrokerCompensation": "3.00%",
+            "Utilities": [
+                "Cable Connected",
+                "Electricity Connected",
+                "Public"
+            ],
+            "View": [
+                "Water"
+            ],
+            "VirtualTourURLUnbranded": "http://instatour.propertypanorama.com/instaview/mfr/A3921467",
+            "MFR_WaterAccessYN": "0",
+            "WaterBodyName": "NONE",
+            "MFR_WaterExtrasYN": "0",
+            "WaterfrontFeatures": [
+                "Lake"
+            ],
+            "WaterfrontYN": true,
+            "MFR_WaterView": "Lake",
+            "MFR_WaterViewYN": "1",
+            "WindowFeatures": [
+                "Blinds",
+                "Window Treatments"
+            ],
+            "YearBuilt": 1998,
+            "Zoning": "RMF9",
+            "MFR_ZoningCompatibleYN": "1",
+            "MFR_PublicRemarksAgent": "A second floor furnished 2/2 Villa with vaulted ceilings, walk in closets in Master bedroom, open plan with washer/dryer and kitchen appliances included.  Building located inside the gated community of IMG Academy, clubhouse and community pool available for resident use.  Residents have availability based use of tennis courts, golf training complex and fitness room.",
+            "MFR_SDEOYN": "0",
+            "MFR_TotalAnnualFees": "5438.08",
+            "MFR_TotalMonthlyFees": "453.17",
+            "OriginatingSystemName": "mfrmls",
+            "ModificationTimestamp": "2021-04-30T01:23:55.309Z",
+            "Media": [
+                {
+                    "Order": 1,
+                    "LongDescription": "Living Room",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/e2cb2788-f89c-43ef-a51f-10ef8aa1a532.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5768"
+                },
+                {
+                    "Order": 4,
+                    "LongDescription": "Kitchen",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/3ff3b736-47e2-4d71-97a4-037262223d3f.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f576b"
+                },
+                {
+                    "Order": 3,
+                    "LongDescription": "Dining Room",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/2084ba15-e0af-484e-8a74-01747b3a2685.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f576a"
+                },
+                {
+                    "Order": 6,
+                    "LongDescription": "Other - Desk in Alcove",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/bca456f2-6586-480a-91a0-8f9268b36a26.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f576d"
+                },
+                {
+                    "Order": 5,
+                    "LongDescription": "Kitchen",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/2d6793a5-f877-473d-a568-4c626275b97e.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f576c"
+                },
+                {
+                    "Order": 2,
+                    "LongDescription": "Living Room",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/ee0bc42b-23b6-47a6-91cb-d6371ea4ac14.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5769"
+                },
+                {
+                    "Order": 9,
+                    "LongDescription": "Bedroom 2",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/bde2ef55-af26-444e-82c7-a8d998bc7316.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5770"
+                },
+                {
+                    "Order": 7,
+                    "LongDescription": "Other - Twin Bed in alcove",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/8ca45bb0-1cf8-4a87-8720-f2b96fd7a4d2.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f576e"
+                },
+                {
+                    "Order": 8,
+                    "LongDescription": "Bedroom 1",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/1ad76667-2346-4f56-9575-b2e560d7b16f.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f576f"
+                },
+                {
+                    "Order": 11,
+                    "LongDescription": "Swimming Pool/Hot Tub/Sauna",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/73a23900-090e-410d-8e7f-3e06dd91e5c1.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5772"
+                },
+                {
+                    "Order": 12,
+                    "LongDescription": "Other",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/623e6d11-3bd4-495a-86ed-00b46354d778.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5773"
+                },
+                {
+                    "Order": 10,
+                    "LongDescription": "Bath1",
+                    "MediaType": "jpg",
+                    "ImageWidth": 800,
+                    "ImageHeight": 600,
+                    "ImageSizeDescription": "800x600",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/b192726b-652c-4132-a41f-3d5a5a09af53.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5771"
+                },
+                {
+                    "Order": 0,
+                    "LongDescription": "Exterior Front",
+                    "MediaType": "jpg",
+                    "ImageWidth": 512,
+                    "ImageHeight": 400,
+                    "ImageSizeDescription": "512x400",
+                    "MediaURL": "https://s3.amazonaws.com/mlsgrid/images/8ce98859-9b93-48af-93d8-1f780367df79.jpeg",
+                    "MediaModificationTimestamp": "2018-11-15T17:48:09.000Z",
+                    "MediaKey": "5bed6b08f9e2b616277f5767"
+                }
+            ],
+            "Rooms": [
+                {
+                    "RoomDimensions": "12x12",
+                    "RoomKey": "MFR83283258",
+                    "RoomLength": 12,
+                    "RoomType": "Bedroom 2",
+                    "RoomWidth": 12
+                },
+                {
+                    "RoomDimensions": "12x09",
+                    "RoomFeatures": [
+                        "Breakfast Bar"
+                    ],
+                    "RoomKey": "MFR107246175",
+                    "RoomLength": 9,
+                    "RoomType": "Kitchen",
+                    "RoomWidth": 12
+                },
+                {
+                    "RoomDimensions": "21x13",
+                    "RoomKey": "MFR108308511",
+                    "RoomLength": 13,
+                    "RoomType": "Living Room",
+                    "RoomWidth": 21
+                },
+                {
+                    "RoomDimensions": "15x14",
+                    "RoomKey": "MFR111815306",
+                    "RoomLength": 14,
+                    "RoomType": "Master Bedroom",
+                    "RoomWidth": 15
+                },
+                {
+                    "RoomFeatures": [
+                        "Tub With Shower"
+                    ],
+                    "RoomKey": "MFR500108563",
+                    "RoomType": "Master Bathroom"
+                }
+            ],
+            "BuyerAgentAOR": "Sarasota - Manatee",
+            "BuyerAgentFullName": "ADAM CUFFARO",
+            "BuyerAgentKey": "MFR1124547",
+            "BuyerAgentMlsId": "MFR281504415",
+            "BuyerOfficeKey": "MFR1047624",
+            "BuyerOfficeMlsId": "MFR281520248",
+            "BuyerOfficeName": "MICHAEL SAUNDERS & COMPANY",
+            "Directions": "34th St. W. to entrance of IMG",
+            "Latitude": 27.443846,
+            "Longitude": -82.599752,
+            "MFR_AssociationFeeRequirement": "Required",
+            "MFR_SWSubdivCommunityName": "Bollettieri Resort Villas",
+            "MFR_SubdivisionNum": "6145413",
+            "StreetDirSuffix": "W",
+            "StreetName": "54TH",
+            "StreetNumber": "3803",
+            "StreetSuffix": "DRIVE",
+            "UnitNumber": "O202",
+            "UnparsedAddress": "3803  54TH DR W #O202",
+            "MlgCanView": true,
+            "MlgCanUse": [
+                "IDX"
+            ]
+        }
+        ]
+    }
