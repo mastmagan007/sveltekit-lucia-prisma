@@ -28,7 +28,7 @@ model Property {
   utilities              String[]
   securityFeatures       String[]
   modification_timestamp DateTime?
-  Media                  String[]
+  propertyMedia          String[]
 }
 
 // model Media {

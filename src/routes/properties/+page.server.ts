@@ -146,15 +146,15 @@ async function downloadMediaAndUploadToStorage(MediaURL, MediaKey) {
   }
 
   console.log('Media uploaded successfully:', fileName);
-  return data.publicUrl;
+  const { data: publicUrlData } = await supabase.storage.from('levinsCO').getPublicUrl(`myProperties/${fileName}`);
+  const { publicUrl } = publicUrlData;
+  return publicUrl;
 }
 
 
-
-async function getOrCreateProperty(property) {
+async function getOrCreateProperty(property, mediaUrls) {
   const existingProperty = await prisma.property.findUnique({
-    where: { listing_id: property.ListingKey },
-    include: { Media: true },
+    where: { listing_id: property.ListingKey }
   });
 
   if (existingProperty) {
@@ -163,26 +163,25 @@ async function getOrCreateProperty(property) {
     const newProperty = await prisma.property.create({
       data: {
         listing_id: property.ListingKey,
-        title: property.UnparsedAddress !== undefined ? property.UnparsedAddress : null,
-        city: property.City !== undefined ? property.City : null,
-        state: property.StateOrProvince !== undefined ? property.StateOrProvince : null,
-        addRooms: property.MFR_AdditionalRooms !== undefined ? property.MFR_AdditionalRooms : null,
-        area: property.BuildingAreaTotal !== undefined ? property.BuildingAreaTotal : null,
-        area_units: property.BuildingAreaUnits !== undefined ? property.BuildingAreaUnits : null,
-        listPrice: property.ListPrice !== undefined ? property.ListPrice : null,
-        type: property.PropertyType !== undefined ? property.PropertyType : null,
-        remarks: property.PublicRemarks !== undefined ? property.PublicRemarks : null,
-        yearBuilt: property.YearBuilt !== undefined ? property.YearBuilt : null,
-        totalRooms: property.MFR_RoomCount !== undefined ? property.MFR_RoomCount : null,
-        amenities: property.AssociationAmenities !== undefined ? property.AssociationAmenities : [],
-        utilities: property.Utilities !== undefined ? property.Utilities : [],
-        securityFeatures: property.SecurityFeatures !== undefined ? property.SecurityFeatures : [],
-        modification_timestamp: property.ModificationTimestamp !== undefined ? property.ModificationTimestamp : null,
-        Media: {
-          create: [],
-        },
+        title: property.UnparsedAddress || null,
+        city: property.City || null,
+        state: property.StateOrProvince || null,
+        addRooms: property.MFR_AdditionalRooms || null,
+        area: property.BuildingAreaTotal || null,
+        area_units: property.BuildingAreaUnits || null,
+        listPrice: property.ListPrice || null,
+        type: property.PropertyType || null,
+        remarks: property.PublicRemarks || null,
+        yearBuilt: property.YearBuilt || null,
+        totalRooms: property.MFR_RoomCount || null,
+        amenities: property.AssociationAmenities || [],
+        utilities: property.Utilities || [],
+        securityFeatures: property.SecurityFeatures || [],
+        modification_timestamp: property.ModificationTimestamp || null,
+        propertyMedia : {
+          set: mediaUrls, // Setting the media URLs directly as an array in the property creation
+        }
       },
-      include: { Media: true },
     });
 
     console.log('New Property created:', newProperty);
@@ -190,64 +189,28 @@ async function getOrCreateProperty(property) {
   }
 }
 
-
-
 export const load = async ({ fetch }) => {
   try {
-    // Commented out for testing purposes
-    // const response = await fetch('https://api.mlsgrid.com/v2/Property?$filter=OriginatingSystemName%20eq%20%27mfrmls%27%20and%20ModificationTimestamp%20gt%202020-12-30T23:59:59.99Z&$expand=Media,Rooms,UnitTypes', {
-    //   headers: {
-    //     Authorization: `Bearer ${accessToken}`,
-    //     ...corsHeaders,
-    //     'Content-Type': 'application/json',
-    //   },
-    // });
-
-    // const responseData = await response.json();
-
     if (responseData.hasOwnProperty('value')) {
       const { value } = responseData;
 
       for (const property of value) {
+        const mediaUrls = [];
+        const media = property.Media;
 
-        const propertyData = await getOrCreateProperty(property);
-        //const media = property.Media;
+        for (const mediaItem of media) {
+          const { MediaURL, MediaKey } = mediaItem;
+          const publicUrl = await downloadMediaAndUploadToStorage(MediaURL, MediaKey);
 
-        // Upload each media file to the Supabase storage bucket
-        // for (const mediaItem of media) {
-        //   const { MediaURL, MediaKey } = mediaItem;
+          if (publicUrl) {
+            mediaUrls.push(publicUrl);
+            console.log('media url pushed')
+          }
+        }
 
-        //  const publicUrl = await downloadMediaAndUploadToStorage(MediaURL, MediaKey);
-
-        //   if (publicUrl) {
-        //     //Get or create the Property and add the Media to its Media array
-        //     const propertyData = await getOrCreateProperty(property);
-        //     const existingMedia = propertyData.Media.some((m) => m.MediaKey === MediaKey);
-
-        //     if (!existingMedia) {
-        //       const newMedia = await prisma.media.create({
-        //         data: {
-        //           myMediaURL: publicUrl,
-        //           MediaKey: MediaKey,
-        //           Order: mediaItem.Order,
-        //           LongDescription: mediaItem.LongDescription,
-        //           MediaType: mediaItem.MediaType,
-        //           ImageWidth: mediaItem.ImageWidth,
-        //           ImageHeight: mediaItem.ImageHeight,
-        //           ImageSizeDescription: mediaItem.ImageSizeDescription,
-        //           MediaModificationTimestamp: mediaItem.MediaModificationTimestamp,
-        //           property: {
-        //             connect: { id: propertyData.id },
-        //           },
-        //         },
-        //       });
-
-        //       console.log('Media created and connected to Property successfully:', newMedia);
-        //     }
-        //   }
-        // }
-
-        console.log('Property and Media data saved to the database successfully.');
+        if (mediaUrls.length > 0) {
+          await getOrCreateProperty(property, mediaUrls);
+        }
       }
     } else {
       console.error('Error fetching data: Invalid response format');
