@@ -11,8 +11,8 @@ datasource db {
 }
 
 model Property {
-  id                     Int       @id @default(autoincrement())
-  listing_id             String
+  id                     Int       @default(autoincrement())
+  listing_id             String    @unique
   city                   String
   state                  String
   title                  String?
@@ -28,7 +28,7 @@ model Property {
   utilities              String[]
   securityFeatures       String[]
   modification_timestamp DateTime?
-  propertyMedia          String[]
+  propertyMedia                  String[]
 }
 
 // model Media {
