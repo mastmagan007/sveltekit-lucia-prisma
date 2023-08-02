@@ -28,23 +28,23 @@ model Property {
   utilities              String[]
   securityFeatures       String[]
   modification_timestamp DateTime?
-  Media                  Media[]
+  Media                  String[]
 }
 
-model Media {
-  id                         Int      @id @default(autoincrement())
-  myMediaURL                 String
-  MediaKey                   String
-  Order                      Int
-  LongDescription            String
-  MediaType                  String
-  ImageWidth                 Int
-  ImageHeight                Int
-  ImageSizeDescription       String
-  MediaModificationTimestamp DateTime
-  property                   Property @relation(fields: [propertyId], references: [id])
-  propertyId                 Int
-}
+// model Media {
+//   id                         Int      @id @default(autoincrement())
+//   myMediaURL                 String
+//   MediaKey                   String
+//   Order                      Int
+//   LongDescription            String
+//   MediaType                  String
+//   ImageWidth                 Int
+//   ImageHeight                Int
+//   ImageSizeDescription       String
+//   MediaModificationTimestamp DateTime
+//   property                   Property @relation(fields: [propertyId], references: [id])
+//   propertyId                 Int
+// }
 
 model Article {
   id       Int     @id @default(autoincrement())
