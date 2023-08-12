@@ -46,10 +46,9 @@
 		"@lucia-auth/adapter-prisma": "^0.4.0",
 		"@prisma/client": "^5.0.0",
 		"@supabase/supabase-js": "^2.20.0",
-		"flowbite": "^1.8.1",
-		"flowbite-svelte": "^0.41.2",
 		"npm-check-updates": "^16.10.15",
 		"svelte-youtube-embed": "^0.1.8",
+		"sveltestrap": "^5.11.1",
 		"tailwind-merge": "^1.14.0"
 	}
 }
