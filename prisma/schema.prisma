@@ -7,15 +7,16 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("CONNECTION_POOL_URL")
 }
 
 model Property {
   id                     Int       @default(autoincrement())
-  listing_id             String    @unique
+  Listing_id              String    @id @unique
+  listing_key             String    
   city                   String
   state                  String
-  title                  String?
+  title                  String
   addRooms               String?
   area                   Int?
   area_units             String?
@@ -28,7 +29,195 @@ model Property {
   utilities              String[]
   securityFeatures       String[]
   modification_timestamp DateTime?
-  propertyMedia                  String[]
+  propertyMedia          String[]
+   AdditionalParcelsYN    Boolean?
+  MFR_AdditionalRooms    String?
+  Appliances             String[]
+  ArchitecturalStyle     String[]
+  AssociationAmenities   String[]
+  AssociationFee         Int?
+  AssociationFeeFrequency String?
+  AssociationFeeIncludes String[]
+  AssociationName        String?
+  AssociationYN          Boolean?
+  MFR_AvailableForLeaseYN String?
+  MFR_BackupsRequestedYN String?
+  BathroomsFull          Int?
+  BathroomsTotalInteger  Int?
+  BedroomsTotal          Int?
+  BuildingAreaSource     String?
+  BuildingAreaTotal      Int?
+  BuildingAreaUnits      String?
+  MFR_BuildingElevatorYN String?
+  BuyerAgentAOR          String?
+  BuyerAgentFullName     String?
+  BuyerAgentKey          String?
+  BuyerAgentMlsId        String?
+  BuyerOfficeKey         String?
+  BuyerOfficeMlsId       String?
+  BuyerOfficeName        String?
+  Directions              String?
+  Latitude                Float?
+  Longitude               Float?
+  MFR_AssociationFeeRequirement String?
+  MFR_BuildingNameNumber  String?
+  MFR_SWSubdivCommunityName String?
+  MFR_SubdivisionNum      String?
+  StreetName              String?
+  StreetNumber            String?
+  StreetSuffix            String?
+  UnitNumber              String?
+  UnparsedAddress         String?
+   MlgCanView              Boolean?
+  MlgCanUse               String[]
+  OtherStructures         String[]
+  Ownership               String?
+  ParcelNumber            String?
+  ParkingFeatures         String[]
+  MFR_PetRestrictions     String?
+  PetsAllowed             String[]
+  MFR_PetSize             String?
+  PhotosChangeTimestamp   DateTime?
+  PhotosCount             Int?
+  PoolPrivateYN           Boolean?
+  PostalCode              String?
+  PostalCodePlus4         String?
+  PreviousListPrice       Int?
+  MFR_PreviousStatus      String?
+  PriceChangeTimestamp    DateTime?
+  MFR_PropertyDescription String?
+  PropertySubType         String?
+  BuyerAgencyCompensation          String?
+  MFR_CalculatedListPriceByCalculatedSqFt String?
+  CarportSpaces                    Int?
+  CarportYN                        Boolean?
+  MFR_CDDYN                        String?
+  City                             String?
+  CloseDate                        DateTime?
+  ClosePrice                       Int?
+  MFR_ClosePriceByCalculatedListPriceRatio String?
+  MFR_ClosePriceByCalculatedSqFt   String?
+  CoListAgentDirectPhone           String?
+  CoListAgentFullName              String?
+  CommunityFeatures                     String[]
+  MFR_ContractStatus                    String?
+  Cooling                               String[]
+  CountyOrParish                        String?
+  CumulativeDaysOnMarket                Int?
+  MFR_CurrentPrice                      String?
+  DaysOnMarket                          Int?
+  MFR_DaysToClosed                      String?
+  DirectionFaces                        String?
+  MFR_DPRURL                            String?
+  MFR_DPRURL2                           String?
+  MFR_DPRYN                             String?
+  ElementarySchool                      String?
+  MFR_ExpectedClosingDate               DateTime?
+  FireplaceYN                           Boolean?
+  MFR_FloorNumber                       String?
+  Furnished                             String?
+  MFR_FutureLandUse                     String?
+  HighSchool                            String?
+  MFR_HomesteadYN                       String?
+  HomeWarrantyYN                        Boolean?
+  InteriorFeatures                      String[]
+  InternetAddressDisplayYN              Boolean?
+  InternetAutomatedValuationDisplayYN   Boolean?
+  InternetEntireListingDisplayYN        Boolean?
+  ListAgentAOR                          String?
+  ListAgentDirectPhone                  String?
+  ListAgentEmail                        String?
+  ListAgentFax                          String?
+  ListAgentFullName                     String?
+    ListAgentKey                          String?
+  ListAgentMlsId                        String?
+  ListAgentOfficePhoneExt               String?
+  ListAgentPager                        String?
+  ListAgentURL                          String?
+  ListAOR                               String?
+  ListingAgreement                      String?
+  ListingContractDate                   DateTime?  
+  ListingKey                            String?
+  OriginatingSystemKey                  String?
+  ListOfficeFax                         String?
+  MFR_ListOfficeHeadOfficeKeyNumeric    String?
+  ListOfficeKey                         String?
+  ListOfficeMlsId                       String?
+  ListOfficeName                        String?
+  ListOfficePhone                       String?
+  ListPrice                             Int?
+  LivingArea                            Int?
+  LivingAreaSource                      String?
+  LivingAreaUnits                       String?
+  LotFeatures                           String[]
+  LotSizeAcres                          Float?
+  LotSizeSquareFeet                     Int?
+  MFR_MaxPetWeight                      String?
+  MiddleOrJuniorSchool                  String?
+  MFR_MillageRate                       String?
+  MFR_MinimumLease                      String?
+  MLSAreaMajor                          String?
+  MlsStatus                             String?
+  MFR_MonthlyHOAAmount                  String?
+  NewConstructionYN                     Boolean?
+  MFR_NonRepCompensation                String?
+  MFR_NumberOfPets                      String?
+  MFR_NumTimesperYear                   String?
+  OffMarketDate                         DateTime?
+  OriginalEntryTimestamp                DateTime?
+  OriginalListPrice                     Int?
+  MFR_OriginatingSystemName_            String?
+  MFR_OriginatingSystemTimestamp         DateTime?
+  MFR_OtherExemptionsYN                 String?
+  PropertyType                          String?
+  PublicRemarks                         String?
+  PublicSurveyRange                     String?
+  PublicSurveySection                   String?
+  PurchaseContractDate                  DateTime?
+  MFR_RATIO_ClosePrice_By_ListPrice     String?
+  MFR_RATIO_ClosePrice_By_OriginalListPrice String?
+  MFR_RATIO_CurrentPrice_By_CalculatedSqFt String?
+  RoadFrontageType                      String[]
+  MFR_RoomCount                         String?
+  SecurityFeatures                      String[]
+  ShowingRequirements                   String[]
+  SpaYN                                 Boolean?
+  SpecialListingConditions              String[]
+  StandardStatus                        String?
+  StateOrProvince                       String?
+  StatusChangeTimestamp                 DateTime?
+  StoriesTotal                          Int?
+  SubdivisionName                       String?
+  TaxAnnualAmount                       Int?
+  TaxBookNumber                         String?
+  TaxLegalDescription                   String?
+  TaxLot                                String?
+  TaxYear                               Int?
+  MFR_TotalAcreage                      String?
+  Township                              String?
+  TransactionBrokerCompensation         String?
+  Utilities                             String[]
+  View                                  String[]
+  MFR_WaterAccess                       String?
+  MFR_WaterAccessYN                     String?
+  MFR_WaterExtras                       String?
+    MFR_WaterExtrasYN                    String?
+  WaterfrontFeatures                    String[]
+  WaterfrontYN                          Boolean?
+  WaterSource                           String[]
+  MFR_WaterView                         String?
+  MFR_WaterViewYN                       String?
+  WindowFeatures                        String[]
+  YearBuilt                             Int?
+  MFR_ZoningCompatibleYN                String?
+  MFR_PublicRemarksAgent                String?
+  MFR_SDEOYN                            String?
+  MFR_TotalAnnualFees                   String?
+  MFR_TotalMonthlyFees                  String?
+  OriginatingSystemName                 String?
+  ModificationTimestamp                 DateTime?
+  Rooms                                 Json
+
 }
 
 // model Media {
@@ -41,7 +230,7 @@ model Property {
 //   ImageWidth                 Int
 //   ImageHeight                Int
 //   ImageSizeDescription       String
-//   MediaModificationTimestamp DateTime
+//   MediaModificationTimestamp DateTime?
 //   property                   Property @relation(fields: [propertyId], references: [id])
 //   propertyId                 Int
 // }
